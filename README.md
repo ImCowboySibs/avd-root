@@ -22,7 +22,7 @@ Once the device is rooted, open SuperSU. It'll prompt you to update the `su` bin
 
 ## Persistence:
 
-This is a system root, meaning we are modifying the `/system` parition. This requires using the `-writable-system` flag, even after changes have been made. Not using this flag will load the default system image. 
+This is a system root, meaning we are modifying the `/system` parition. This requires using the `-writable-system` flag, even after changes have been made. Not using this flag will load the default system image. The `-selinux disabled` flag is also required, not using it will cause a bootloop.
 
 If the `su` daemon is not being started on boot, you can always start it manually with `su --daemon &`.
 
